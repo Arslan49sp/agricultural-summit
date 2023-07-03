@@ -12,6 +12,51 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  margin: 0;
   font-family: "lato", sans-serif;
+}
+
+body {
+  width: 80%;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 375px) {
+  /* mobile menu related classes */
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 0;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 99;
+  }
+
+  .hamburger .bar,
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #67798e;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-7px, 4.5px);
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-6.5px, -4.5px);
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
 }
