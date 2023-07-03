@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap");
+
+:root {
+  --text-dark: #515151;
+  --h-dark: #595959;
+  --teal: #868686;
+  --red: #ff5438;
+  --light-red: #f78c89;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "lato", sans-serif;
+}
