@@ -13,3 +13,11 @@ menuBtn.addEventListener('click', () => {
     document.body.style.overflowY = 'hidden';
   }
 });
+
+navLinkMenu.forEach((element) => {
+    element.addEventListener('click', () => {
+      menuBtn.classList.remove('is-active');
+      mobileMenu.classList.remove('is-active');
+      document.body.style.overflowY = 'scroll';
+    });
+  });
