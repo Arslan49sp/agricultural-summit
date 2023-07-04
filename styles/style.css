@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 
 :root {
   --text-dark: #515151;
@@ -6,6 +7,7 @@
   --teal: #868686;
   --red: #ff5438;
   --light-red: #f78c89;
+  --cocogoose: "COCOGOOSE", sans-serif;
 }
 
 *,
@@ -16,17 +18,21 @@
 }
 
 body {
-  width: 80%;
-  margin: 0 10px;
+  max-width: 100%;
+  margin: auto;
 }
 
 @media screen and (min-width: 375px) {
   /* mobile menu related classes */
+  .header-container {
+    border: 1px solid green;
+  }
   .hamburger {
     position: relative;
     display: block;
     width: 25px;
     margin-top: 10px;
+    margin-left: 10px;
     cursor: pointer;
     padding: 0;
     appearance: none;
@@ -91,5 +97,50 @@ body {
 
   .mobile-nav a:hover {
     color: #508918;
+  }
+
+  .hero-container {
+    width: 100vw;
+    background-image: url(../assets/background-image.jpg);
+    background-size: cover;
+    padding: 40px 10px;
+  }
+
+  .hero-subtitle {
+    line-height: 0;
+    color: green;
+  }
+
+  .hero-main-title {
+    font-size: 1.6rem;
+    font-family: "cocogoose", sans-serif;
+    color: var(--red);
+    font-weight: 800;
+  }
+
+  .hero-desc {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: var(--text-dark);
+  }
+
+  .hero-date {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+    text-align: left;
+    color: var(--h-dark);
+  }
+
+  .hero-location {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--teal);
+    margin-top: -10px;
   }
 }
