@@ -135,10 +135,10 @@ body {
   }
 
   .hero-main-title {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-family: "cocogoose", sans-serif;
     color: var(--red);
-    font-weight: 800;
+    font-weight: 900;
   }
 
   .hero-desc {
@@ -205,11 +205,11 @@ body {
   }
 
   .prog-icon {
-    flex: 2;
+    flex: 1;
   }
 
   .prog-title {
-    flex: 2;
+    flex: 3;
     text-align: left;
   }
 
@@ -221,5 +221,93 @@ body {
     letter-spacing: 0.06em;
     text-align: left;
     flex: 8;
+  }
+
+  .join-button {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    background-color: var(--red);
+    align-self: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: white;
+  }
+
+  .speakers-layout {
+    background-color: white;
+    padding: 0 10px;
+  }
+
+  .speakers-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 15px 0;
+  }
+
+  .speaker-card {
+    display: grid;
+    grid-template-columns: 30% 66%;
+    column-gap: 4%;
+    margin-top: 10px;
+  }
+
+  .speaker-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .speaker-title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: black;
+    margin: 0;
+  }
+
+  .speaker-designation {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--light-red);
+    margin-top: 3px;
+  }
+
+  .speaker-hr {
+    margin-top: -7px;
+    margin-left: 0;
+  }
+
+  .speaker-desc {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: -0.06em;
+    text-align: left;
+  }
+
+  .expand-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin: 20px 0px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .expand-more:hover {
+    background-color: wheat;
   }
 }
