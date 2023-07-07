@@ -40,7 +40,7 @@ body {
 }
 
 .text-typo {
-  font-size: 14px;
+  font-size: 3.5vw;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
@@ -125,7 +125,7 @@ body {
   .hero-container {
     width: 100vw;
     background-image: url(../assets/background-image.jpg);
-    background-size: cover;
+    background-size: contain;
     padding: 40px 10px;
   }
 
@@ -137,21 +137,24 @@ body {
   .hero-main-title {
     font-size: 1.7rem;
     font-family: "cocogoose", sans-serif;
-    color: var(--red);
     font-weight: 900;
+    background-image: url(../assets/font_bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
   }
 
   .hero-desc {
-    font-size: 12px;
+    font-size: 3vw;
     font-weight: 400;
-    line-height: 17px;
     letter-spacing: -0.01em;
     text-align: left;
     color: var(--text-dark);
   }
 
   .hero-date {
-    font-size: 20px;
+    font-size: 5vw;
     font-weight: 900;
     letter-spacing: -0.08em;
     text-align: left;
@@ -159,7 +162,7 @@ body {
   }
 
   .hero-location {
-    font-size: 13px;
+    font-size: 3.25vw;
     font-weight: 700;
     letter-spacing: -0.02em;
     text-align: left;
@@ -172,6 +175,7 @@ body {
   .programs-container {
     background-color: var(--bg-prog);
     padding: 10px 20px;
+    display: block;
   }
 
   .sec-title {
@@ -182,7 +186,7 @@ body {
   }
 
   hr {
-    width: 12%;
+    width: 10%;
     margin-top: -14px;
     height: 2px;
     background-color: var(--red);
@@ -215,9 +219,8 @@ body {
 
   .prog-desc {
     font-family: Lato;
-    font-size: 11px;
+    font-size: 2.7vw;
     font-weight: 700;
-    line-height: 22px;
     letter-spacing: 0.06em;
     text-align: left;
     flex: 8;
@@ -260,9 +263,8 @@ body {
   }
 
   .speaker-title {
-    font-size: 15px;
+    font-size: 3.75vh;
     font-weight: 700;
-    line-height: 18px;
     letter-spacing: -0.02em;
     text-align: left;
     color: black;
@@ -270,9 +272,8 @@ body {
   }
 
   .speaker-designation {
-    font-size: 10px;
+    font-size: 2.5vw;
     font-weight: 700;
-    line-height: 15px;
     letter-spacing: -0.02em;
     text-align: left;
     color: var(--light-red);
@@ -285,10 +286,8 @@ body {
   }
 
   .speaker-desc {
-    font-size: 10px;
+    font-size: 2.5vw;
     font-weight: 700;
-    line-height: 14px;
-    letter-spacing: -0.06em;
     text-align: left;
   }
 
@@ -303,11 +302,30 @@ body {
     border: none;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    font-size: 11px;
+    font-size: 2.7vw;
     font-weight: 700;
   }
 
   .expand-more:hover {
     background-color: wheat;
   }
+
+  /* partners */
+
+  .partner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    gap: 10px;
+    row-gap: 25px;
+  }
+
+  .partner-img {
+    height: auto;
+    width: 110px;
+  }
+
+  
 }
