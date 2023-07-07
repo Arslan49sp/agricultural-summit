@@ -327,5 +327,13 @@ body {
     width: 110px;
   }
 
-  
+  footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    filter: grayscale(100%);
+  }
 }
