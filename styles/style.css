@@ -136,7 +136,7 @@ body {
   }
 
   .hero-main-title {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: "cocogoose", sans-serif;
     font-weight: 900;
     background-image: url(../assets/font_bg.jpg);
@@ -437,5 +437,41 @@ body {
   .nav-logo {
     width: 130px;
     height: 50px;
+  }
+
+  /* hero section */
+
+  .hero-container {
+    padding: 5% 15%;
+  }
+
+  .hero-subtitle {
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+
+  .hero-main-title {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .hero-desc {
+    font-size: 1.7rem;
+    width: 800px;
+    border: 10px solid white;
+    padding: 20px;
+  }
+
+  .hero-date {
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+
+  .hero-location {
+    font-size: 1.8rem;
+    margin-top: 0px;
   }
 }
