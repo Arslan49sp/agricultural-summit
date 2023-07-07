@@ -21,6 +21,7 @@
 body {
   max-width: 100%;
   margin: auto;
+  scroll-behavior: smooth;
 }
 
 .text-center {
@@ -335,5 +336,106 @@ body {
     padding: 30px;
     gap: 30px;
     filter: grayscale(100%);
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+/* Desktop design */
+
+@media screen and (min-width: 780px) {
+  .desktop-hidden {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+  }
+
+  .header-container {
+    border: none;
+  }
+
+  .top-bar {
+    height: 35px;
+    background-color: var(--bg-prog);
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .top-bar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    max-width: 70%;
+    gap: 20px;
+  }
+
+  .top-bar ul li a:hover {
+    color: var(--light-red);
+  }
+
+  /* Desktop navigation. */
+  .desktop-nav {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 20% 60% 20%;
+    margin: 10px auto;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+    margin-right: 30px;
+  }
+
+  .desktop-nav ul li {
+    list-style: none;
+  }
+
+  .desktop-nav ul li a {
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: left;
+    text-decoration: none;
+    color: var(--h-dark);
+  }
+
+  .desktop-nav ul li a:hover {
+    color: black;
+  }
+
+  .desktop-nav ul li a:hover {
+    color: var(red);
+  }
+
+  .nav-button {
+    background-color: white;
+    color: var(--light-red);
+    border: 5px solid var(--red);
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: fit-content;
+    padding: 0 20px;
+    justify-self: end;
+  }
+
+  .nav-logo {
+    width: 130px;
+    height: 50px;
   }
 }
