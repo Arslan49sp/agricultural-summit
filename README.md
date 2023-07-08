@@ -58,7 +58,7 @@ This is a fully responsive project with respect to mobile and desktop. It also l
 
 ## 🚀 Live Presentation <a name="live-presentation"></a>
 
-- [Live Presentation Link](https://www.loom.com/share/99945e54f72f40b2b68f8de895a2824a?sid=37dd5e35-6833-4998-b1a4-1753d9fae8e5)
+- [Live Presentation Link](https://www.loom.com/share/8b6a21e8bb2a4af9b70cfb30ab9ea41b?sid=cbe2948f-574e-4a2d-b4a4-42c6e4d71e8d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
