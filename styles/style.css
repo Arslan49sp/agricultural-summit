@@ -23,6 +23,7 @@ body {
   max-width: 100%;
   margin: auto;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .text-center {
@@ -51,6 +52,10 @@ body {
   .text-typo {
     font-size: 1.5rem;
     font-weight: 700;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .header-container {
@@ -149,6 +154,7 @@ body {
     margin: 0;
     background-image: url(../assets/font_bg.jpg);
     background-repeat: no-repeat;
+    background-clip: var(--text-dark);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-font-smoothing: antialiased;
@@ -367,7 +373,7 @@ body {
 
 /* Desktop design */
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .desktop-hidden {
     display: none;
   }
@@ -516,14 +522,28 @@ body {
   }
 
   .program-container {
+    width: 110.3rem;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
+    margin: auto;
+  }
+
+  .programs-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .see-programs {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin: 3rem auto;
   }
 
   .program {
     flex-direction: column;
-    width: 20rem;
+    width: 22rem;
   }
 
   .prog-icon {
@@ -544,7 +564,7 @@ body {
   /* Feature speakers */
   .speakers-layout {
     width: 70%;
-    max-width: 100.3rem;
+    max-width: 110.3rem;
     margin: auto;
     padding: 0;
     padding-bottom: 2rem;
@@ -556,8 +576,8 @@ body {
   }
 
   .speaker-img {
-    max-width: 18rem;
-    max-height: 18rem;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .speaker-title {
