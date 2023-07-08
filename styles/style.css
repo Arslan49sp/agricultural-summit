@@ -42,6 +42,14 @@ body {
   color: var(--red);
 }
 
+.text-teal {
+  color: var(--teal);
+}
+
+.margin-zero {
+  margin: 0;
+}
+
 .text-typo {
   font-size: 2.4rem;
   font-weight: 700;
@@ -369,6 +377,97 @@ body {
   .mobile-hidden {
     display: none;
   }
+
+  /* ABOUT PAGE */
+
+  .hero-location-about {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--teal);
+  }
+
+  .email-about {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: var(--light-red);
+    justify-content: center;
+    margin-top: -10px;
+    max-width: 100vw;
+  }
+
+  .logo-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100vw;
+    background-color: white;
+    padding: 2.5rem 1rem;
+  }
+
+  .sec-title-about {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  .logo-desc-about {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  .about-logo {
+    max-width: 100vw;
+  }
+
+  .gallery-about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event-img-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/conf_one.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33.4rem;
+    height: 18.3rem;
+  }
+
+  .event-img-about-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/conf_two.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.4rem;
+    height: 18.3rem;
+  }
+
+  .event-title {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+  }
 }
 
 /* Desktop design */
@@ -616,5 +715,57 @@ body {
   footer p {
     font-size: 2rem;
     color: var(--h-dark);
+  }
+
+  /* ABOUT PAGE */
+
+  .hero-desk-about {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 95.83rem;
+  }
+
+  .hero-location-about {
+    font-size: 1.6rem;
+  }
+
+  .email-about {
+    font-size: 1.4rem;
+  }
+
+  .logo-info-container {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sec-title-about {
+    font-size: 3rem;
+  }
+
+  .logo-desc-about {
+    font-size: 1.6rem;
+  }
+
+  .about-logo {
+    width: 54.2rem;
+    height: 19.5rem;
+  }
+
+  .gallery-about {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .event-img-about {
+    width: 45.3rem;
+    height: 24.6rem;
+    padding: 0 1rem;
+  }
+  .event-img-about-one {
+    width: 45.3rem;
+    height: 24.6rem;
+    padding: 0 1rem;
   }
 }
